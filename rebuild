@@ -1,0 +1,6 @@
+#!/usr/local/bin/fish
+docker stop caddy
+docker rm caddy
+docker build -t caddyalpine .
+docker run --name caddy -p 80:80 -d caddyalpine
+curl http://localhost

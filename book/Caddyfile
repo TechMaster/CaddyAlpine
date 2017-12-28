@@ -1,0 +1,7 @@
+:80
+markdown / {
+    template blog templates/blog.html
+    template index templates/index.html
+}
+log stdout
+errors stdout
