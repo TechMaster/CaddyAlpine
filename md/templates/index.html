@@ -13,16 +13,13 @@
         </header>
 
         <main>
-            {{range .Files}}
-                {{if ne .Name "index.md" }}
-                    <article>
-                        <h3><a href="{{.Name}}">{{.Name}}</a></h3>
-                            {{if not .IsDir }}
-                                {{.Summarize 15}}
-                            {{end}}
-                    </article>
-                {{end}}
-            {{end}}
+            <ul>
+                <li><a href="hello.md">Hello</a></li>
+                <li><a href="world.md">World</a></li>
+                <li><a href="hello-world.md">Hello World</a></li>
+                <li><a href="README.md">Read Me</a></li>
+            </ul>
+            
         </main>
     </body>
 </html>

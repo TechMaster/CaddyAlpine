@@ -19,7 +19,7 @@ $ ./rebuild
 $ ./website
 ```
 
-**Host một web site chứa markdown sử dụng Caddy markdown plugin**
+**Host một web site chứa markdown (thư mục md) sử dụng Caddy markdown plugin**
 ```
 $ ./hostmd
 ```

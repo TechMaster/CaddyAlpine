@@ -1,5 +1,5 @@
 #!/usr/local/bin/fish
 docker stop caddy
 docker rm caddy
-docker run --name caddy -v $PWD/book/:/srv -p 80:80 -d caddyalpine --conf /srv/Caddyfile
+docker run --name caddy -v $PWD/md/:/srv -p 80:80 -d caddyalpine --conf /srv/Caddyfile
 curl http://localhost
