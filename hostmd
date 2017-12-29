@@ -2,4 +2,5 @@
 docker stop caddy
 docker rm caddy
 docker run --name caddy -v $PWD/md/:/srv -p 80:80 -d caddyalpine --conf /srv/Caddyfile
+sleep .5
 curl http://localhost
