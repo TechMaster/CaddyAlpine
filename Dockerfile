@@ -20,5 +20,5 @@ RUN chown -R caddy:caddy /srv
 
 USER caddy
 
-ENTRYPOINT /usr/local/bin/caddy
-CMD --conf /etc/Caddyfile
+ENTRYPOINT ["/usr/local/bin/caddy"]
+CMD ["--conf", "/etc/Caddyfile"]
